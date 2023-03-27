@@ -1,0 +1,58 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+body .Grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 445px 191px auto;
+    height: 100vh;
+    margin: 0 auto;
+    width: 90%;
+}
+
+body .Grid nav {
+    align-items: center;
+    background: #0081A7;
+    color: #f1f1f1;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    justify-content: center;
+}
+
+body .Grid section {
+    align-items: center;
+    background: #00AFB9;
+    display: flex;
+    grid-column: 1 / 10;
+    justify-content: center;
+}
+
+body .Grid aside {
+    align-items: center;
+    background: #F07167;
+    color: #f1f1f1;
+    display: flex;
+    grid-column: 10 / 13;
+    justify-content: center;
+}
+
+body .Grid div {
+    align-items: center;
+    background: #FED9B7;
+    display: flex;
+    grid-column: span 4;
+    justify-content: center;
+}
+
+body .Grid footer {
+    align-items: center;
+    background: #0081A7;
+    color: #f1f1f1;
+    display: flex;
+    grid-column: span 12;
+    justify-content: center;
+}
