@@ -7,7 +7,7 @@ body .Grid {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto 445px 191px auto;
+    grid-template-rows: auto 4fr 2fr auto;
     height: 100vh;
     margin: 0 auto;
     width: 90%;
@@ -21,6 +21,7 @@ body .Grid nav {
     grid-column-start: 1;
     grid-column-end: 13;
     justify-content: center;
+    padding: 16px 0;
 }
 
 body .Grid section {
@@ -55,4 +56,110 @@ body .Grid footer {
     display: flex;
     grid-column: span 12;
     justify-content: center;
+    padding: 16px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    body .Grid {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto 3fr 1fr 1fr auto;
+    }
+
+    body .Grid nav {
+        grid-column: 1 / 9;
+    }
+
+    body .Grid section {
+        grid-column: 1 / 6;
+    }
+
+    body .Grid aside {
+        grid-column: 6 / 9;
+    }
+
+    body .Grid .w1 {
+        grid-column: 1 / 5;
+    }
+
+    body .Grid .w2 {
+        grid-column: 5 / 9;
+    }
+
+    body .Grid .w3 {
+        grid-column: 1 / 9;
+    }
+
+    body .Grid footer {
+        grid-column: 1 / 9;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    body .Grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto 3fr 1fr auto;
+    }
+
+    body .Grid nav {
+        grid-column: 1 / 7;
+    }
+
+    body .Grid section {
+        grid-column: 1 / 5;
+    }
+
+    body .Grid aside {
+        grid-column: 5 / 7;
+    }
+
+    body .Grid .w1 {
+        grid-column: span 2;
+    }
+
+    body .Grid .w2 {
+        grid-column: span 2;
+    }
+
+    body .Grid .w3 {
+        grid-column: span 2;
+    }
+
+    body .Grid footer {
+        grid-column: 1 / 7;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    body .Grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 3fr 2fr 1fr 1fr 1fr auto;
+    }
+
+    body .Grid nav {
+        grid-column: 1 / 4;
+    }
+
+    body .Grid section {
+        grid-column: 1 / 4;
+    }
+
+    body .Grid aside {
+        grid-column: 1 / 4;
+    }
+
+    body .Grid .w1 {
+        grid-column: 1 / 4;
+    }
+
+    body .Grid .w2 {
+        grid-column: 1 / 4;
+    }
+
+    body .Grid .w3 {
+        grid-column: 1 / 4;
+    }
+
+    body .Grid footer {
+        grid-column: 1 / 4;
+    }
 }
